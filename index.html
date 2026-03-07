@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nura — Personal Finance, Intelligently Automated</title>
+  <meta name="description" content="Nura automatically captures your transactions from Gmail and Outlook, categorises them with AI, and gives you smart spending insights — no spreadsheets needed." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<header class="nav">
+  <div class="nav-inner container">
+    <a href="index.html" class="logo">nura</a>
+    <nav class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </nav>
+    <a href="https://app.getnura.app" class="btn btn-primary nav-cta">Get started free</a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#features">Features</a>
+    <a href="#how-it-works">How it works</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="https://app.getnura.app" class="btn btn-primary">Get started free</a>
+  </div>
+</header>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-badge">AI-powered personal finance</div>
+    <h1 class="hero-title">Your finances,<br>understood at a glance.</h1>
+    <p class="hero-subtitle">Nura reads your Gmail and Outlook receipts, categorises every transaction with AI, and surfaces insights — so you never have to open a spreadsheet again.</p>
+    <div class="hero-actions">
+      <a href="https://app.getnura.app" class="btn btn-primary btn-lg">Start for free</a>
+      <a href="#how-it-works" class="btn btn-ghost btn-lg">See how it works</a>
+    </div>
+
+    <!-- App screenshot -->
+    <div class="app-screenshot-wrap">
+      <img src="app-screenshot.png" alt="Nura app showing spending overview, activity heatmap, and category breakdown" class="app-screenshot" />
+    </div>
+  </div>
+</section>
+
+
+<!-- ── FEATURES ── -->
+<section class="features" id="features">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-badge">Features</div>
+      <h2 class="section-title">Everything you need to understand your money</h2>
+      <p class="section-sub">No manual data entry. No bank integrations to set up. Just connect your email and let Nura do the rest.</p>
+    </div>
+
+    <div class="features-grid">
+
+      <div class="feature-card feature-card--large">
+        <div class="feature-icon" style="background:#eff6ff;color:#2563eb;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <h3>Email-powered sync</h3>
+        <p>Connect Gmail or Outlook and Nura automatically reads transaction receipts in real time. No browser extensions, no screen scraping — just secure, read-only email access.</p>
+        <div class="feature-tags">
+          <span class="tag">Gmail</span>
+          <span class="tag">Outlook</span>
+          <span class="tag">Auto-sync</span>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#f0fdf4;color:#16a34a;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
+        <h3>AI categorisation</h3>
+        <p>Nura automatically assigns the right category to each transaction — Food, Transport, Shopping, Utilities, and more. You can correct any mistake in one tap.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#faf5ff;color:#9333ea;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        </div>
+        <h3>Smart analytics</h3>
+        <p>Category breakdowns, monthly trend charts, top merchants, and payment mode analysis — all updated automatically as new transactions arrive.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#fef2f2;color:#dc2626;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+        </div>
+        <h3>Budget alerts</h3>
+        <p>Set monthly budgets per category. Nura checks every few hours and notifies you the moment you approach or exceed a limit.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#eff6ff;color:#2563eb;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h3>PDF statement upload</h3>
+        <p>Don't have email receipts? Upload a PDF bank statement and Nura will parse and import your transactions automatically.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#faf5ff;color:#9333ea;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
+        <h3>30+ currencies</h3>
+        <p>HKD, SGD, MYR, THB, IDR, PHP, VND, INR, USD and more. Set your base currency and all totals are shown accordingly.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── HOW IT WORKS ── -->
+<section class="how" id="how-it-works">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-badge">How it works</div>
+      <h2 class="section-title">Up and running in 60 seconds</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h3>Create an account</h3>
+          <p>Sign up with your email and password. No credit card required.</p>
+        </div>
+      </div>
+      <div class="step-connector"></div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h3>Connect your email</h3>
+          <p>Authorise read-only Gmail or Outlook access. Nura never sends emails on your behalf.</p>
+        </div>
+      </div>
+      <div class="step-connector"></div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h3>Watch it fill in</h3>
+          <p>Transactions appear automatically. Upload a bank statement to backfill older history.</p>
+        </div>
+      </div>
+      <div class="step-connector"></div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <h3>Get insights</h3>
+          <p>Set budgets, review analytics, and let Nura surface trends in your spending automatically.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PRIVACY NOTE ── -->
+<section class="privacy-note" id="privacy">
+  <div class="container">
+    <p class="privacy-note-text">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink:0;margin-top:1px;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      Privacy-first design following GDPR, HK PDPO and Singapore PDPA principles. <a href="privacy.html">Read our Privacy Policy →</a>
+    </p>
+  </div>
+</section>
+
+<!-- ── CTA ── -->
+<section class="cta" id="get-started">
+  <div class="container cta-inner">
+    <h2>Ready to understand your finances?</h2>
+    <p>Join Nura and get your first AI spending insight in minutes. No credit card required.</p>
+    <a href="https://app.getnura.app" class="btn btn-primary btn-lg">Create your free account</a>
+    <p class="cta-fine">By signing up, you agree to our <a href="https://getnura.app/terms.html">Terms of Service</a> and <a href="https://getnura.app/privacy.html">Privacy Policy</a>.</p>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="logo">nura</span>
+      <p>Personal finance, intelligently automated.</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <div class="footer-col-title">Product</div>
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How it works</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Legal</div>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="data-deletion.html">Data Deletion</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Contact</div>
+        <a href="mailto:hello@getnura.app">hello@getnura.app</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    <p>© 2026 Nura. All rights reserved.</p>
+    <p>Privacy-first design following GDPR, HK PDPO and Singapore PDPA principles.</p>
+  </div>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const menu = document.getElementById('mobile-menu');
+  hamburger.addEventListener('click', () => {
+    menu.classList.toggle('open');
+    hamburger.classList.toggle('open');
+  });
+  menu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => { menu.classList.remove('open'); hamburger.classList.remove('open'); });
+  });
+</script>
+</body>
+</html>

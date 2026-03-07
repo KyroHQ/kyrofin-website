@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Deletion — Nura</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner container">
+    <a href="index.html" class="logo">nura</a>
+    <nav class="nav-links">
+      <a href="index.html#features">Features</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms</a>
+      <a href="data-deletion.html" style="color:#1e293b;font-weight:600;">Data Deletion</a>
+    </nav>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html#features">Features</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms</a>
+    <a href="data-deletion.html">Data Deletion</a>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Data Deletion</h1>
+    <p>How to permanently delete your Nura account and all associated data.</p>
+  </div>
+</section>
+
+<section class="page-body">
+  <div class="container">
+    <div class="page-content">
+
+      <div class="highlight-box">
+        Your data belongs to you. You can delete everything — instantly, from inside the app — or by submitting a request to us. All data is erased within <strong>30 days</strong>.
+      </div>
+
+      <h2>Option 1 — Delete from the app (instant)</h2>
+      <p>This is the fastest way to delete your account and all data:</p>
+      <ol>
+        <li>Open Nura and sign in to your account.</li>
+        <li>Tap <strong>Profile</strong> (bottom-right on mobile, sidebar on desktop).</li>
+        <li>Scroll to the bottom of the Profile page to the red-outlined <strong>Danger Zone</strong> section.</li>
+        <li>Tap <strong>Delete Account</strong>.</li>
+        <li>In the confirmation dialog, type <code>DELETE</code> and press <strong>Delete My Account</strong>.</li>
+      </ol>
+      <p>This immediately and permanently deletes:</p>
+      <ul>
+        <li>Your user account and login credentials</li>
+        <li>All transactions (including email-synced and PDF-imported)</li>
+        <li>All budgets and goals</li>
+        <li>All AI-generated daily, weekly, and monthly insights</li>
+        <li>Gmail and Outlook OAuth tokens (your email connection is also revoked)</li>
+        <li>Any uploaded bank statement data</li>
+      </ul>
+
+      <h2>Option 2 — Submit a deletion request</h2>
+      <p>If you cannot access your account (e.g. lost password), send a deletion request to:</p>
+      <p><a href="mailto:privacy@getnura.app">privacy@getnura.app</a></p>
+      <p>Include the email address associated with your Nura account. We will verify your identity and process the deletion within <strong>30 days</strong>.</p>
+
+      <h2>What we retain after deletion</h2>
+      <p>After your account is deleted, we may retain:</p>
+      <ul>
+        <li><strong>Anonymised, aggregated statistics</strong> that cannot identify you (e.g. "X users synced Gmail this month"). These do not contain any personal data.</li>
+        <li>Backup copies may persist for up to 30 days in encrypted form before being overwritten as part of our standard backup rotation policy.</li>
+      </ul>
+      <p>We do not retain your email address, name, transactions, or any identifiable data after the 30-day erasure window.</p>
+
+      <h2>Revoking email access without deleting your account</h2>
+      <p>If you only want to disconnect Gmail or Outlook (without deleting your account):</p>
+      <ol>
+        <li>Go to <strong>Profile → Gmail / Outlook section</strong>.</li>
+        <li>Tap <strong>Disconnect</strong>. This immediately revokes our OAuth access to your inbox.</li>
+      </ol>
+      <p>You can also revoke access directly from your Google or Microsoft account security settings at any time, independently of Nura.</p>
+
+      <h2>Questions</h2>
+      <p>For any questions about data deletion, contact <a href="mailto:privacy@getnura.app">privacy@getnura.app</a>. We aim to respond within 5 business days.</p>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="logo">nura</span>
+      <p>Personal finance, intelligently automated.</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <div class="footer-col-title">Product</div>
+        <a href="index.html#features">Features</a>
+        <a href="index.html#how-it-works">How it works</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Legal</div>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="data-deletion.html">Data Deletion</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Contact</div>
+        <a href="mailto:hello@getnura.app">hello@getnura.app</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    <p>© 2026 Nura. All rights reserved.</p>
+    <p>Privacy-first design following GDPR, HK PDPO and Singapore PDPA principles.</p>
+  </div>
+</footer>
+
+<script>
+  const h = document.getElementById('hamburger'), m = document.getElementById('mobile-menu');
+  h.addEventListener('click', () => { m.classList.toggle('open'); h.classList.toggle('open'); });
+</script>
+</body>
+</html>

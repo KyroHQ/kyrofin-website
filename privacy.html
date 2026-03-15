@@ -43,7 +43,7 @@
       <p class="effective-date">Effective date: 1 March 2026 · Last updated: 1 March 2026</p>
 
       <div class="highlight-box">
-        <strong>Summary:</strong> Nura only reads your email to find transaction receipts. We encrypt all sensitive data at rest using AES-256-GCM. You can delete your account and all data at any time. We never sell your data.
+        <strong>Summary:</strong> Nura never connects to your email account. You forward bank notification emails to Nura's ingestion address using a filter you set up yourself. We encrypt all sensitive data at rest using AES-256-GCM. You can delete your account and all data at any time. We never sell your data.
       </div>
 
       <h2>1. Who we are</h2>
@@ -75,11 +75,11 @@
         <li><strong>Base currency preference</strong></li>
       </ul>
 
-      <h3>3.2 Email OAuth tokens</h3>
-      <p>When you connect Gmail or Outlook, we store OAuth access and refresh tokens so we can poll for new transaction receipts on your behalf. These tokens are encrypted with AES-256-GCM before being written to our database. We request <strong>read-only</strong> email scope; we never send, delete, or modify emails.</p>
+      <h3>3.2 Forwarded email data</h3>
+      <p>Nura does not connect to your email account and does not store OAuth tokens. Instead, you create a filter in your own Gmail or Outlook account to forward bank notification emails to Nura's ingestion address. Only the emails you choose to forward are ever received by Nura. We do not have access to your inbox, and we never send, delete, or modify emails on your behalf.</p>
 
       <h3>3.3 Transaction data</h3>
-      <p>From your email receipts and any PDF bank statements you upload, we extract and store:</p>
+      <p>From forwarded bank notification emails and any PDF bank statements you upload, we extract and store:</p>
       <ul>
         <li>Transaction date, amount, and currency</li>
         <li>Merchant or receiver name</li>
@@ -112,16 +112,6 @@
           </tr>
         </thead>
         <tbody>
-          <tr style="border-bottom:1px solid #f1f5f9;">
-            <td style="padding:10px 0;color:#475569;">Google (Gmail API)</td>
-            <td style="padding:10px 0;color:#475569;">Read email receipts</td>
-            <td style="padding:10px 0;color:#475569;">OAuth tokens; email bodies read but not stored verbatim</td>
-          </tr>
-          <tr style="border-bottom:1px solid #f1f5f9;">
-            <td style="padding:10px 0;color:#475569;">Microsoft (Outlook API)</td>
-            <td style="padding:10px 0;color:#475569;">Read email receipts</td>
-            <td style="padding:10px 0;color:#475569;">OAuth tokens; email bodies read but not stored verbatim</td>
-          </tr>
           <tr style="border-bottom:1px solid #f1f5f9;">
             <td style="padding:10px 0;color:#475569;">OpenAI</td>
             <td style="padding:10px 0;color:#475569;">Transaction classification &amp; AI insights</td>

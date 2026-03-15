@@ -48,8 +48,8 @@
       <h2>2. Description of the Service</h2>
       <p>Nura is a personal finance tracking application that:</p>
       <ul>
-        <li>Reads transaction receipts from your Gmail or Outlook inbox (read-only access);</li>
-        <li>Parses PDF bank statements you choose to upload;</li>
+        <li>Processes bank notification emails that you forward to Nura's ingestion address via a filter you set up in your own email provider;</li>
+        <li>Parses PDF bank statements you choose to upload (for historical transactions);</li>
         <li>Uses AI to categorise transactions and generate spending insights;</li>
         <li>Allows you to set budgets and savings goals.</li>
       </ul>
@@ -66,14 +66,15 @@
         <li>You may not create accounts using automated means or under false identities.</li>
       </ul>
 
-      <h2>5. Email access and data</h2>
-      <p>When you connect Gmail or Outlook, you grant Nura <strong>read-only</strong> OAuth access to search for transaction-related emails. Nura:</p>
+      <h2>5. Email forwarding and data</h2>
+      <p>Nura does not connect to your email account and does not request OAuth access. To capture future transactions, you set up a filter in your own Gmail or Outlook account to forward bank notification emails to Nura's ingestion address. By doing so:</p>
       <ul>
-        <li>Will never send, delete, or modify emails on your behalf;</li>
-        <li>Only reads emails that appear to be transaction receipts — not your full inbox;</li>
-        <li>Stores only extracted transaction fields (amount, date, merchant), not full email bodies.</li>
+        <li>You remain in full control of which emails are forwarded — only emails matching your filter are sent to Nura;</li>
+        <li>Nura will never access your inbox, send emails on your behalf, or delete or modify any emails;</li>
+        <li>Nura stores only extracted transaction fields (amount, date, merchant), not full email bodies.</li>
       </ul>
-      <p>You may disconnect email access at any time from the Profile page. Disconnecting revokes our ability to sync new transactions but does not delete previously extracted transaction data unless you also delete your account.</p>
+      <p>To stop forwarding emails to Nura, simply remove the filter in your email provider's settings. Previously extracted transaction data will remain in your account unless you delete your account.</p>
+      <p>For historical transactions, you may upload a PDF bank statement. Nura will parse and import those transactions automatically.</p>
 
       <h2>6. Acceptable use</h2>
       <p>You agree not to:</p>
